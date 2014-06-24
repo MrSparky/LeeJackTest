@@ -9,10 +9,14 @@
 #import "MainViewController.h"
 
 @interface MainViewController ()
-
 @end
 
 @implementation MainViewController
+
+@synthesize currentButton;
+@synthesize oneShotEnabled = _oneShotEnabled;
+@synthesize modeSwitch;
+@synthesize testPattern = _testPattern;
 
 - (void)viewDidLoad
 {
@@ -64,5 +68,46 @@
         [self performSegueWithIdentifier:@"showAlternate" sender:sender];
     }
 }
+
+#pragma Main Screen UI
+
+- (IBAction)patternClicked:(UIButton *)sender
+{
+    if(self.currentButton != nil) {
+        [self.currentButton setTitleColor:
+         [UIColor colorWithRed:0.0
+                         green:0.5
+                          blue:1.0
+                         alpha:1.0]
+                                 forState:UIControlStateNormal];
+    }
+    
+    self.currentButton = sender;
+    [self.currentButton setTitleColor:[UIColor redColor]
+                             forState:UIControlStateNormal];
+    
+    NSScanner *scanner = [NSScanner scannerWithString:
+                          self.currentButton.titleLabel.text];
+    [scanner scanHexInt:&_testPattern];
+    
+}
+
+- (IBAction)switchToggled:(UISegmentedControl *)sender {
+    if(sender.selectedSegmentIndex == 0) {
+        _oneShotEnabled = true;
+    } else {
+        _oneShotEnabled = false;
+    }
+}
+
+- (void)setOneShotEnabled:(bool)oneShotEnabled {
+    _oneShotEnabled = oneShotEnabled;
+    if(oneShotEnabled) {
+        self.modeSwitch.selectedSegmentIndex = 0;
+    } else {
+        self.modeSwitch.selectedSegmentIndex = 1;
+    }
+}
+
 
 @end

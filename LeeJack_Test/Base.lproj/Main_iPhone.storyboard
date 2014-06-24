@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5023" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="rQl-PL-IFJ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="rQl-PL-IFJ">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--class Prefix:identifier Main View Controller-->
+        <!--Main View Controller-->
         <scene sceneID="rV5-Y2-ghB">
             <objects>
                 <viewController id="rQl-PL-IFJ" customClass="MainViewController" sceneMemberID="viewController">
@@ -16,6 +16,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="HiJack Output" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FEP-DI-jfY">
+                                <rect key="frame" x="87" y="38" width="149" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jqg-sy-dxO">
                                 <rect key="frame" x="278" y="526" width="22" height="22"/>
                                 <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
@@ -30,19 +37,135 @@
                                     <segue destination="kIf-nA-PKG" kind="modal" identifier="showAlternate" modalTransitionStyle="flipHorizontal" id="ZEO-Qe-X3j"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZBu-yz-mA4">
+                                <rect key="frame" x="87" y="80" width="147" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="0xAA - 1010 1010">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="patternClicked:" destination="rQl-PL-IFJ" eventType="touchUpInside" id="pam-rg-KTC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x3G-TM-da9">
+                                <rect key="frame" x="87" y="118" width="147" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="0xA5 - 1010 0101">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="patternClicked:" destination="rQl-PL-IFJ" eventType="touchUpInside" id="QkH-cX-2Wh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UoW-dR-bfI">
+                                <rect key="frame" x="87" y="156" width="147" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="0x5A - 0101 1010">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="patternClicked:" destination="rQl-PL-IFJ" eventType="touchUpInside" id="PAI-U1-T4c"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OpJ-5w-XG0">
+                                <rect key="frame" x="87" y="194" width="147" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="0x55 - 0101 0101">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="patternClicked:" destination="rQl-PL-IFJ" eventType="touchUpInside" id="fzu-eX-53v"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M5A-By-9m6">
+                                <rect key="frame" x="87" y="232" width="147" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="0xFF - 1111 1111">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="patternClicked:" destination="rQl-PL-IFJ" eventType="touchUpInside" id="WN4-mY-r3c"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gcw-xc-B9Y">
+                                <rect key="frame" x="87" y="270" width="147" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="0xF0 - 1111 0000">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="patternClicked:" destination="rQl-PL-IFJ" eventType="touchUpInside" id="ZTy-ea-LQO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6nn-jA-hPu">
+                                <rect key="frame" x="87" y="308" width="147" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="0x0F - 0000 1111">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="patternClicked:" destination="rQl-PL-IFJ" eventType="touchUpInside" id="KtA-vI-bmo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hRb-lc-hOj">
+                                <rect key="frame" x="87" y="346" width="147" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="0x00 - 0000 0000">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="patternClicked:" destination="rQl-PL-IFJ" eventType="touchUpInside" id="MVQ-gg-B1I"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="kgW-wK-1u1">
+                                <rect key="frame" x="83" y="487" width="154" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="One Shot"/>
+                                    <segment title="Repeating"/>
+                                </segments>
+                                <connections>
+                                    <action selector="switchToggled:" destination="rQl-PL-IFJ" eventType="valueChanged" id="TCJ-eF-GnX"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="hRb-lc-hOj" firstAttribute="top" secondItem="6nn-jA-hPu" secondAttribute="bottom" constant="8" id="1hW-BX-azS"/>
                             <constraint firstAttribute="trailing" secondItem="jqg-sy-dxO" secondAttribute="trailing" constant="20" symbolic="YES" id="1ym-A3-aKq"/>
+                            <constraint firstItem="M5A-By-9m6" firstAttribute="top" secondItem="OpJ-5w-XG0" secondAttribute="bottom" constant="8" id="7Zt-Pz-Uhk"/>
+                            <constraint firstAttribute="centerX" secondItem="ZBu-yz-mA4" secondAttribute="centerX" constant="-0.5" id="Cxo-w9-4iH"/>
+                            <constraint firstAttribute="centerX" secondItem="kgW-wK-1u1" secondAttribute="centerX" id="DrY-QJ-Z8r"/>
+                            <constraint firstAttribute="centerX" secondItem="UoW-dR-bfI" secondAttribute="centerX" constant="-0.5" id="Fym-bD-2WU"/>
+                            <constraint firstAttribute="centerX" secondItem="OpJ-5w-XG0" secondAttribute="centerX" constant="-0.5" id="MuX-jb-1Ue"/>
+                            <constraint firstItem="x3G-TM-da9" firstAttribute="top" secondItem="ZBu-yz-mA4" secondAttribute="bottom" constant="8" id="P6p-0G-TY7"/>
+                            <constraint firstItem="OpJ-5w-XG0" firstAttribute="top" secondItem="UoW-dR-bfI" secondAttribute="bottom" constant="8" id="Qg4-OL-sb2"/>
+                            <constraint firstAttribute="centerX" secondItem="M5A-By-9m6" secondAttribute="centerX" constant="-0.5" id="UO5-ee-ZSD"/>
                             <constraint firstAttribute="bottom" secondItem="jqg-sy-dxO" secondAttribute="bottom" constant="20" symbolic="YES" id="Uf2-YL-3zF"/>
+                            <constraint firstAttribute="centerX" secondItem="gcw-xc-B9Y" secondAttribute="centerX" constant="-0.5" id="V4d-lT-hIi"/>
+                            <constraint firstItem="ZBu-yz-mA4" firstAttribute="top" secondItem="FEP-DI-jfY" secondAttribute="bottom" constant="21" id="XxA-Af-4oF"/>
+                            <constraint firstItem="FEP-DI-jfY" firstAttribute="top" secondItem="bfD-tQ-IfD" secondAttribute="bottom" constant="18" id="dgE-cd-KyG"/>
+                            <constraint firstAttribute="centerX" secondItem="x3G-TM-da9" secondAttribute="centerX" constant="-0.5" id="gJY-3h-PLD"/>
+                            <constraint firstItem="gcw-xc-B9Y" firstAttribute="top" secondItem="M5A-By-9m6" secondAttribute="bottom" constant="8" id="h0p-ww-OC3"/>
+                            <constraint firstItem="6nn-jA-hPu" firstAttribute="top" secondItem="gcw-xc-B9Y" secondAttribute="bottom" constant="8" id="knO-Td-H7V"/>
+                            <constraint firstItem="UoW-dR-bfI" firstAttribute="top" secondItem="x3G-TM-da9" secondAttribute="bottom" constant="8" id="lhN-Bj-Hjo"/>
+                            <constraint firstItem="c4s-Xn-x5B" firstAttribute="top" secondItem="kgW-wK-1u1" secondAttribute="bottom" constant="53" id="puo-np-Ut0"/>
+                            <constraint firstAttribute="centerX" secondItem="FEP-DI-jfY" secondAttribute="centerX" constant="-1.5" id="rA6-Rr-5RE"/>
+                            <constraint firstAttribute="centerX" secondItem="hRb-lc-hOj" secondAttribute="centerX" constant="-0.5" id="vZP-gd-Dt8"/>
+                            <constraint firstAttribute="centerX" secondItem="6nn-jA-hPu" secondAttribute="centerX" constant="-0.5" id="wHH-Lz-y2f"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="currentButton" destination="ZBu-yz-mA4" id="t7B-zZ-KWw"/>
+                        <outlet property="modeSwitch" destination="kgW-wK-1u1" id="2Z9-C2-9pG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h4L-l5-tyG" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-51" y="182"/>
         </scene>
-        <!--class Prefix:identifier Flipside View Controller-->
+        <!--Flipside View Controller-->
         <scene sceneID="z9J-Vg-hzE">
             <objects>
                 <viewController id="kIf-nA-PKG" customClass="FlipsideViewController" sceneMemberID="viewController">
@@ -57,7 +180,7 @@
                             <navigationBar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="hED-2o-FLw">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <items>
-                                    <navigationItem title="Title" id="caU-JJ-JLf">
+                                    <navigationItem title="Configuration" id="caU-JJ-JLf">
                                         <barButtonItem key="leftBarButtonItem" systemItem="done" id="WuG-Ps-ZbD">
                                             <connections>
                                                 <action selector="done:" destination="kIf-nA-PKG" id="j28-pm-V55"/>
