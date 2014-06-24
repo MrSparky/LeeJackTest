@@ -75,10 +75,8 @@
 {
     if(self.currentButton != nil) {
         [self.currentButton setTitleColor:
-         [UIColor colorWithRed:0.0
-                         green:0.5
-                          blue:1.0
-                         alpha:1.0]
+            [UIColor colorWithRed:0.0 green:0.5
+                             blue:1.0 alpha:1.0]
                                  forState:UIControlStateNormal];
     }
     
