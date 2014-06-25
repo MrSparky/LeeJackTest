@@ -7,8 +7,14 @@
 //
 
 #import "MainViewController.h"
+#import "HiJackIF.h"
 
 @interface MainViewController ()
+
+@property (strong, nonatomic) HiJackIF * dataIF;
+
+- (void)repeatPattern:(id)sender;
+
 @end
 
 @implementation MainViewController
@@ -17,11 +23,16 @@
 @synthesize oneShotEnabled = _oneShotEnabled;
 @synthesize modeSwitch;
 @synthesize testPattern = _testPattern;
+@synthesize dataIF;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
 	// Do any additional setup after loading the view, typically from a nib.
+    dataIF = [[HiJackIF alloc] init];
+    _oneShotEnabled = true;
+    _testPattern = 0xAA;
 }
 
 - (void)didReceiveMemoryWarning
@@ -88,6 +99,12 @@
                           self.currentButton.titleLabel.text];
     [scanner scanHexInt:&_testPattern];
     
+    // Send Now in "one shot" mode
+    if(_oneShotEnabled) {
+        [dataIF sendData:_testPattern];
+    }else{
+        // Data will send on next loop
+    }
 }
 
 - (IBAction)switchToggled:(UISegmentedControl *)sender {
@@ -95,6 +112,9 @@
         _oneShotEnabled = true;
     } else {
         _oneShotEnabled = false;
+        [NSTimer scheduledTimerWithTimeInterval:1.0 target:self
+                                       selector:@selector(repeatPattern:)
+                                       userInfo:nil repeats:YES];
     }
 }
 
@@ -107,5 +127,12 @@
     }
 }
 
+- (void)repeatPattern:(id)sender {
+    [dataIF sendData:_testPattern];
+    if(_oneShotEnabled) {
+        NSTimer * timer = (NSTimer *)sender;
+        [timer invalidate];
+    }
+}
 
 @end
