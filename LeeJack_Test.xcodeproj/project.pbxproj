@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ECA36C36195956B600EB49D1 /* HiJackIF.mm in Sources */ = {isa = PBXBuildFile; fileRef = ECA36C35195956B600EB49D1 /* HiJackIF.mm */; };
+		ECA36C401959636900EB49D1 /* libHiJack.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ECA36C3F195962DE00EB49D1 /* libHiJack.a */; };
+		ECA36C4B195AA11000EB49D1 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECA36C4A195AA11000EB49D1 /* AudioToolbox.framework */; };
+		ECA36C51195ACEAF00EB49D1 /* LeeJack_76.png in Resources */ = {isa = PBXBuildFile; fileRef = ECA36C4F195ACEAF00EB49D1 /* LeeJack_76.png */; };
+		ECA36C52195ACEAF00EB49D1 /* LeeJack_152.png in Resources */ = {isa = PBXBuildFile; fileRef = ECA36C50195ACEAF00EB49D1 /* LeeJack_152.png */; };
+		ECA36C54195ACEF700EB49D1 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ECA36C53195ACEF700EB49D1 /* Default-568h@2x.png */; };
+		ECA36C56195ACFFC00EB49D1 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ECA36C55195ACFFC00EB49D1 /* Default@2x.png */; };
 		ECFE950419593358001575C3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECFE950319593358001575C3 /* Foundation.framework */; };
 		ECFE950619593358001575C3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECFE950519593358001575C3 /* CoreGraphics.framework */; };
 		ECFE950819593358001575C3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECFE950719593358001575C3 /* UIKit.framework */; };
@@ -26,6 +33,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		ECA36C3E195962DE00EB49D1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ECA36C3A195962DE00EB49D1 /* HiJack.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E946CF6D13F05F6A007022EB;
+			remoteInfo = HiJack;
+		};
 		ECFE952C19593358001575C3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = ECFE94F819593358001575C3 /* Project object */;
@@ -36,6 +50,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		ECA36C34195956B600EB49D1 /* HiJackIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HiJackIF.h; sourceTree = "<group>"; };
+		ECA36C35195956B600EB49D1 /* HiJackIF.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = HiJackIF.mm; sourceTree = "<group>"; };
+		ECA36C3A195962DE00EB49D1 /* HiJack.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = HiJack.xcodeproj; path = "../../hijack-main/iPhone/LibHiJack/HiJack.xcodeproj"; sourceTree = "<group>"; };
+		ECA36C44195A95DD00EB49D1 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
+		ECA36C4A195AA11000EB49D1 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		ECA36C4E195ACE3400EB49D1 /* LeeJack_120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = LeeJack_120.png; path = AppIcons/LeeJack_120.png; sourceTree = "<group>"; };
+		ECA36C4F195ACEAF00EB49D1 /* LeeJack_76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = LeeJack_76.png; path = AppIcons/LeeJack_76.png; sourceTree = "<group>"; };
+		ECA36C50195ACEAF00EB49D1 /* LeeJack_152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = LeeJack_152.png; path = AppIcons/LeeJack_152.png; sourceTree = "<group>"; };
+		ECA36C53195ACEF700EB49D1 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
+		ECA36C55195ACFFC00EB49D1 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = SOURCE_ROOT; };
 		ECFE950019593358001575C3 /* LeeJack_Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeeJack_Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECFE950319593358001575C3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		ECFE950519593358001575C3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -65,6 +89,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECA36C401959636900EB49D1 /* libHiJack.a in Frameworks */,
+				ECA36C4B195AA11000EB49D1 /* AudioToolbox.framework in Frameworks */,
 				ECFE950619593358001575C3 /* CoreGraphics.framework in Frameworks */,
 				ECFE950819593358001575C3 /* UIKit.framework in Frameworks */,
 				ECFE950419593358001575C3 /* Foundation.framework in Frameworks */,
@@ -84,9 +110,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ECA36C3B195962DE00EB49D1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ECA36C3F195962DE00EB49D1 /* libHiJack.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ECA36C4D195ACDFC00EB49D1 /* AppIcons */ = {
+			isa = PBXGroup;
+			children = (
+				ECA36C53195ACEF700EB49D1 /* Default-568h@2x.png */,
+				ECA36C55195ACFFC00EB49D1 /* Default@2x.png */,
+				ECA36C4F195ACEAF00EB49D1 /* LeeJack_76.png */,
+				ECA36C50195ACEAF00EB49D1 /* LeeJack_152.png */,
+				ECA36C4E195ACE3400EB49D1 /* LeeJack_120.png */,
+			);
+			name = AppIcons;
+			sourceTree = "<group>";
+		};
 		ECFE94F719593358001575C3 = {
 			isa = PBXGroup;
 			children = (
+				ECA36C3A195962DE00EB49D1 /* HiJack.xcodeproj */,
 				ECFE950919593358001575C3 /* LeeJack_Test */,
 				ECFE952E19593358001575C3 /* LeeJack_TestTests */,
 				ECFE950219593358001575C3 /* Frameworks */,
@@ -106,6 +153,8 @@
 		ECFE950219593358001575C3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				ECA36C4A195AA11000EB49D1 /* AudioToolbox.framework */,
+				ECA36C44195A95DD00EB49D1 /* AudioUnit.framework */,
 				ECFE950319593358001575C3 /* Foundation.framework */,
 				ECFE950519593358001575C3 /* CoreGraphics.framework */,
 				ECFE950719593358001575C3 /* UIKit.framework */,
@@ -117,6 +166,7 @@
 		ECFE950919593358001575C3 /* LeeJack_Test */ = {
 			isa = PBXGroup;
 			children = (
+				ECA36C4D195ACDFC00EB49D1 /* AppIcons */,
 				ECFE951219593358001575C3 /* AppDelegate.h */,
 				ECFE951319593358001575C3 /* AppDelegate.m */,
 				ECFE951519593358001575C3 /* Main_iPhone.storyboard */,
@@ -127,6 +177,8 @@
 				ECFE951F19593358001575C3 /* FlipsideViewController.m */,
 				ECFE952119593358001575C3 /* Images.xcassets */,
 				ECFE950A19593358001575C3 /* Supporting Files */,
+				ECA36C34195956B600EB49D1 /* HiJackIF.h */,
+				ECA36C35195956B600EB49D1 /* HiJackIF.mm */,
 			);
 			path = LeeJack_Test;
 			sourceTree = "<group>";
@@ -223,6 +275,12 @@
 			mainGroup = ECFE94F719593358001575C3;
 			productRefGroup = ECFE950119593358001575C3 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = ECA36C3B195962DE00EB49D1 /* Products */;
+					ProjectRef = ECA36C3A195962DE00EB49D1 /* HiJack.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				ECFE94FF19593358001575C3 /* LeeJack_Test */,
@@ -231,14 +289,28 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		ECA36C3F195962DE00EB49D1 /* libHiJack.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libHiJack.a;
+			remoteRef = ECA36C3E195962DE00EB49D1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		ECFE94FE19593358001575C3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECA36C56195ACFFC00EB49D1 /* Default@2x.png in Resources */,
 				ECFE951A19593358001575C3 /* Main_iPad.storyboard in Resources */,
+				ECA36C51195ACEAF00EB49D1 /* LeeJack_76.png in Resources */,
 				ECFE952219593358001575C3 /* Images.xcassets in Resources */,
 				ECFE951719593358001575C3 /* Main_iPhone.storyboard in Resources */,
+				ECA36C52195ACEAF00EB49D1 /* LeeJack_152.png in Resources */,
+				ECA36C54195ACEF700EB49D1 /* Default-568h@2x.png in Resources */,
 				ECFE950E19593358001575C3 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,6 +332,7 @@
 			files = (
 				ECFE951419593358001575C3 /* AppDelegate.m in Sources */,
 				ECFE951D19593358001575C3 /* MainViewController.m in Sources */,
+				ECA36C36195956B600EB49D1 /* HiJackIF.mm in Sources */,
 				ECFE952019593358001575C3 /* FlipsideViewController.m in Sources */,
 				ECFE951019593358001575C3 /* main.m in Sources */,
 			);
@@ -394,12 +467,23 @@
 		ECFE953919593358001575C3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LeeJack_Test/LeeJack_Test-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(BUILT_PRODUCTS_DIR)/include/**",
+				);
 				INFOPLIST_FILE = "LeeJack_Test/LeeJack_Test-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"../../hijack-main/iPhone/LibHiJack/",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/include/** $(PROJECT_TEMP_DIR)/../UninstalledProducts/include/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -407,12 +491,24 @@
 		ECFE953A19593358001575C3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Sean Parker (EFVXYB99A5)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LeeJack_Test/LeeJack_Test-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(BUILT_PRODUCTS_DIR)/include/**",
+				);
 				INFOPLIST_FILE = "LeeJack_Test/LeeJack_Test-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"../../hijack-main/iPhone/LibHiJack/",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/include/** $(PROJECT_TEMP_DIR)/../UninstalledProducts/include/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -476,6 +572,7 @@
 				ECFE953A19593358001575C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ECFE953B19593358001575C3 /* Build configuration list for PBXNativeTarget "LeeJack_TestTests" */ = {
 			isa = XCConfigurationList;
@@ -484,6 +581,7 @@
 				ECFE953D19593358001575C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
