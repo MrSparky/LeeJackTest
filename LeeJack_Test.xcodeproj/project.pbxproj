@@ -480,16 +480,16 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"$(BUILT_PRODUCTS_DIR)/include/**",
+					"$(BUILT_PRODUCTS_DIR)/include/HiJack",
 				);
 				INFOPLIST_FILE = "LeeJack_Test/LeeJack_Test-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"../../hijack-main/iPhone/LibHiJack/",
+					"$(BUILT_PRODUCTS_DIR)",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				USER_HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/include/** $(PROJECT_TEMP_DIR)/../UninstalledProducts/include/**";
+				USER_HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/include/HiJack/ $(PROJECT_TEMP_DIR)/../UninstalledProducts/include/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -507,16 +507,16 @@
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
-					"$(BUILT_PRODUCTS_DIR)/include/**",
+					"$(BUILT_PRODUCTS_DIR)/include/HiJack",
 				);
 				INFOPLIST_FILE = "LeeJack_Test/LeeJack_Test-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"../../hijack-main/iPhone/LibHiJack/",
+					"$(BUILT_PRODUCTS_DIR)",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				USER_HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/include/** $(PROJECT_TEMP_DIR)/../UninstalledProducts/include/**";
+				USER_HEADER_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/include/HiJack/ $(PROJECT_TEMP_DIR)/../UninstalledProducts/include/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
